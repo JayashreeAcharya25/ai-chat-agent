@@ -1,0 +1,133 @@
+.chatArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--bg-chat-area);
+  padding: var(--spacing-xl);
+}
+
+.welcomeText {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+.inputContainer {
+  display: flex;
+  gap: var(--spacing-sm);
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: var(--spacing-xxl);
+}
+
+.chatInput {
+  flex: 1;
+  padding: 16px 20px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-lg);
+  background: var(--bg-input);
+  color: var(--text-primary);
+  font-size: 16px;
+  outline: none;
+}
+
+.chatInput:focus {
+  border-color: var(--primary-main);
+}
+
+.toolsBtn {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 16px 20px;
+  background: var(--bg-button);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-lg);
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.toolsBtn:hover {
+  background: var(--bg-card);
+}
+
+.agentCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  width: 100%;
+  max-width: 900px;
+}
+
+.agentCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.agentCard:hover {
+  transform: translateY(-2px);
+}
+
+.cardIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+  color: white;
+}
+
+.researchIcon {
+  background: var(--gradient-research);
+}
+
+.travelIcon {
+  background: var(--gradient-travel);
+}
+
+.studyIcon {
+  background: var(--gradient-study);
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.cardDescription {
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-lg);
+  flex: 1;
+}
+
+.goBtn {
+  background: var(--primary-main);
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.goBtn:hover {
+  opacity: 0.9;
+}

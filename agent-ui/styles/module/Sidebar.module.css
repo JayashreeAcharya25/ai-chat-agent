@@ -1,0 +1,111 @@
+.sidebar {
+  height: 100vh;
+  background: var(--bg-sidebar);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border-light);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-sidebar);
+  margin-bottom: var(--spacing-lg);
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 12px 16px;
+  color: var(--text-sidebar);
+  cursor: pointer;
+  border-radius: var(--border-radius-sm);
+  font-size: 14px;
+  margin-bottom: 4px;
+  transition: background-color 0.2s ease;
+  border: none;
+  background: transparent;
+}
+
+.menuItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.chatsSection {
+  margin: var(--spacing-lg) 0;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.sectionTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--spacing-sm);
+  padding: 0 16px;
+}
+
+.chatItem {
+  padding: 12px 16px;
+  color: var(--text-sidebar);
+  cursor: pointer;
+  border-radius: var(--border-radius-sm);
+  font-size: 14px;
+  margin-bottom: 4px;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.chatItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.chatItem.active {
+  background: var(--primary-main);
+  color: white;
+}
+
+.pagesSection {
+  border-top: 1px solid var(--border-light);
+  padding-top: var(--spacing-lg);
+}
+
+.templateItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  color: var(--text-sidebar);
+  cursor: pointer;
+  border-radius: var(--border-radius-sm);
+  font-size: 14px;
+  margin-bottom: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.templateItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.newBadge {
+  background: var(--primary-main);
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
